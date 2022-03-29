@@ -11,4 +11,16 @@ public class Track {
         Talk[] myArray = new Talk[talkList.size()];
         return talkList.toArray(myArray);
     }
+
+    public boolean canAddTalk() {
+        var sumTime = 0;
+        for (int i = 0; i < talkList.size(); i++) {
+            sumTime +=talkList.get(i).getTime();
+        }
+        if(sumTime >= 420){
+            return false;
+        }
+
+        return true;
+    }
 }

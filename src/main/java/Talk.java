@@ -9,6 +9,14 @@ public class Talk {
         this.time = time;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getTime() {
+        return time;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
